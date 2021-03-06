@@ -1,2 +1,1 @@
-# ecommerce-front
-쇼핑몰 제작 프런트
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
