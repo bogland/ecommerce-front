@@ -8,11 +8,11 @@ const Header = () => {
 };
 export default Header;
 
-const HeaderMob = () => {
+export const HeaderMob = () => {
   return <>Mobile 구현중</>;
 };
 
-const HeaderPC = () => {
+export const HeaderPC = () => {
   return (
     <>
       <section id="header-wrapper">
