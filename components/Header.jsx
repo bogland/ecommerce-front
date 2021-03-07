@@ -19,12 +19,14 @@ export const HeaderMob = () => {
           </li>
           <li className="customer-icon">
             <i id="icon-shoppingbag" />
+            <span id="cart-count">1</span>
           </li>
         </ul>
       </section>
       <style jsx>
         {`
           #header-wrapper {
+            min-width: 320px;
             max-width: 640px;
             width: 100%;
             margin: 20px auto;
@@ -68,6 +70,21 @@ export const HeaderMob = () => {
           }
           .customer-icon .description {
             visibility: hidden;
+          }
+          #cart-count {
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50% 50%;
+            color: white;
+            font-size: 5px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 15px;
+            font-weight: bold;
           }
         `}
       </style>
