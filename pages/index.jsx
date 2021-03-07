@@ -25,17 +25,17 @@ const Header = () => {
         </section>
 
         <ul id="header-customer">
-          <li>
+          <li className="customer-icon">
             <i id="icon-mypage" />
-            마이페이지
+            <span className="description">마이페이지</span>
           </li>
-          <li>
+          <li className="customer-icon">
             <i id="icon-shoppingbag" />
-            쇼핑백
+            <span className="description">쇼핑백</span>
           </li>
-          <li>
+          <li className="customer-icon">
             <i id="icon-recentlyproduct" />
-            최근본상품
+            <span className="description">최근본상품</span>
           </li>
         </ul>
       </section>
@@ -70,18 +70,20 @@ const Header = () => {
           #header-customer li + li {
             margin-left: 20px;
           }
+          .customer-icon {
+            position: relative;
+            margin-top: 20px; /* 아이콘 높이 */
+          }
 
           #header-customer i {
             height: 20px;
             width: 20px;
             background-size: 20px 20px;
             background-position: center;
-
             position: absolute;
             left: 50%;
-            top: -100%;
+            top: -150%;
             transform: translate(-50%, 0);
-
             margin-bottom: 20px;
           }
         `}
