@@ -9,7 +9,72 @@ const Header = () => {
 export default Header;
 
 export const HeaderMob = () => {
-  return <>Mobile 구현중</>;
+  return (
+    <>
+      <section id="header-wrapper">
+        <h1 id="header-title">TONYSTREET</h1>
+        <ul id="header-customer">
+          <li className="customer-icon">
+            <i id="icon-search" />
+          </li>
+          <li className="customer-icon">
+            <i id="icon-shoppingbag" />
+          </li>
+        </ul>
+      </section>
+      <style jsx>
+        {`
+        #header-wrapper {
+            max-width: 640px;
+            width: 100%;
+            margin: 20px auto;
+            text-align:center;
+            position:relative;
+          }
+        #header-title{
+          display:inline-block;
+          font-size:20px;
+          font-weight:bold;
+        }
+        #header-customer {
+            position:absolute;
+            display: inline-block;
+            right:5px;
+            top:-5px;
+            margin-right:10px;
+          }
+        #header-customer li {
+            display: inline-block;
+            position: relative;
+          }
+          #header-customer li + li {
+            margin-left: 20px;
+          }
+          #icon-search{
+            display:inline-block;
+            width:21px;
+            height:21px;
+            background-image:url("image/icon-search.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+
+          }
+          #icon-shoppingbag{
+            display:inline-block;
+            width:25px;
+            height:25px;
+            background-image:url("image/icon-cart.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+          }
+          .customer-icon .description{
+            visibility:hidden;
+          }
+       `}
+
+      </style>
+    </>
+  )
 };
 
 export const HeaderPC = () => {
@@ -63,7 +128,7 @@ export const HeaderPC = () => {
           }
 
           #header-customer {
-            margin-top: 20px;
+   
           }
           #header-customer li {
             display: inline-block;
