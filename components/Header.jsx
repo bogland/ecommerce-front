@@ -23,6 +23,7 @@ export const HeaderMob = () => {
           </li>
         </ul>
       </section>
+      <MainCategory></MainCategory>
       <style jsx>
         {`
           #header-wrapper {
@@ -85,6 +86,44 @@ export const HeaderMob = () => {
             vertical-align: middle;
             line-height: 15px;
             font-weight: bold;
+          }
+        `}
+      </style>
+    </>
+  );
+};
+
+const MainCategory = () => {
+  return (
+    <>
+      <section>
+        <ul className="main-category">
+          <li className="active">홈</li>
+          <li>쇼킹TV</li>
+          <li>베스트</li>
+          <li>신상</li>
+          <li>득템</li>
+          <li>이벤트</li>
+          <li>리뷰</li>
+        </ul>
+      </section>
+
+      <style jsx>
+        {`
+          .main-category {
+            display: flex;
+            justify-content: space-between;
+            margin: auto 20px;
+            padding-top: 18px;
+            font-weight: bold;
+          }
+
+          .main-category li {
+            padding-bottom: 18px;
+          }
+
+          .main-category li.active {
+            border-bottom: 1px solid rgba(255, 0, 0, 1);
           }
         `}
       </style>
