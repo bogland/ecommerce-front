@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import recommendProduct from "./index.module.scss";
 
 const Home = () => {
   const [width, setWidth] = useState(0);
@@ -48,7 +49,13 @@ const Home = () => {
       </CategoryContainer>
 
       <BannerSlide className="bannerSlide">
-        <ul className="slideWrap" style={{ width: width }}>
+        <ul
+          className="slideWrap"
+          style={{ width: width }}
+          onMouseUp={() => {
+            alert("gdgd");
+          }}
+        >
           <li className="slide">
             <img
               style={{ width: width }}
@@ -73,74 +80,44 @@ const Home = () => {
         </ul>
       </BannerSlide>
 
-      <RecommendProductContainer className="recommendProductContainer">
-        <h2 className="mainTitle">추천상품</h2>
-        <ul className="productWrap">
-          <li className="product">
+      <section className={recommendProduct.recommendProductContainer}>
+        <h2 className={recommendProduct.mainTitle}>추천상품</h2>
+        <ul className={recommendProduct.productWrap}>
+          <li className={recommendProduct.product}>
             <img
-              className="image"
+              className={recommendProduct.image}
               src="https://tonystreet.com/UPLOAD/UPLOAD_IMAGE/C020/202005/IMG1591zRt325089538_500.jpg"
             />
-            <div className="brand">CONCHIC</div>
-            <div className="title">컨시크 컬러마크 워터 젤틴트</div>
-            <div className="priceInfo">
-              <span className="percent">93%</span>
-              <span className="retailPrice">15,000</span>
-              <span className="salePrice">990원</span>
+            <div className={recommendProduct.brand}>CONCHIC</div>
+            <div className={recommendProduct.title}>
+              컨시크 컬러마크 워터 젤틴트
+            </div>
+            <div className={recommendProduct.priceInfo}>
+              <span className={recommendProduct.percent}>93%</span>
+              <span className={recommendProduct.retailPrice}>15,000</span>
+              <span className={recommendProduct.salePrice}>990원</span>
             </div>
           </li>
-          <li className="product">
+          <li className={recommendProduct.product}>
             <img
-              className="image"
+              className={recommendProduct.image}
               src="https://tonystreet.com/UPLOAD/UPLOAD_IMAGE/C020/202005/IMG1591zRt325089538_500.jpg"
             />
-            <div className="brand">CONCHIC</div>
-            <div className="title">컨시크 컬러마크 워터 젤틴트</div>
-            <div className="priceInfo">
-              <span className="percent">93%</span>
-              <span className="retailPrice">15,000</span>
-              <span className="salePrice">990원</span>
+            <div className={recommendProduct.brand}>CONCHIC</div>
+            <div className={recommendProduct.title}>
+              컨시크 컬러마크 워터 젤틴트
+            </div>
+            <div className={recommendProduct.priceInfo}>
+              <span className={recommendProduct.percent}>93%</span>
+              <span className={recommendProduct.retailPrice}>15,000</span>
+              <span className={recommendProduct.salePrice}>990원</span>
             </div>
           </li>
         </ul>
-      </RecommendProductContainer>
+      </section>
     </>
   );
 };
-
-const RecommendProductContainer = styled.section`
-  margin: 30px 15px 0;
-  .mainTitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  .productWrap {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    .product {
-      .image {
-        width: 50%;
-      }
-      .brand {
-        font-size: 1rem;
-        font-weight: 600;
-      }
-      .title {
-        font-size: 1rem;
-      }
-      .priceInfo {
-        display: flex;
-        span + span {
-          margin-left: 5px;
-        }
-      }
-    }
-    .product + .product {
-      margin-left: 10px;
-    }
-  }
-`;
 
 export default Home;
 
@@ -157,7 +134,6 @@ const TitleContainer = styled.section`
   .iconWrap {
     display: flex;
     justify-content: space-between;
-
     .icon {
       display: inline-block;
       width: 25px;
@@ -178,7 +154,7 @@ const TitleContainer = styled.section`
 `;
 
 const CategoryContainer = styled.section`
-  margin: 30px 0 20px;
+  margin: 30px 0 0;
   .categoryWrap {
     display: flex;
     justify-content: space-around;
