@@ -86,13 +86,11 @@ const Home = () => {
           <li className={styles.product}>
             <img
               className={styles.image}
-              style={{width:width/2-15}}
+              style={{ width: width / 2 - 15 }}
               src="https://tonystreet.com/UPLOAD/UPLOAD_IMAGE/C020/202005/IMG1591zRt325089538_500.jpg"
             />
             <div className={styles.brand}>CONCHIC</div>
-            <div className={styles.title}>
-              컨시크 컬러마크 워터 젤틴트
-            </div>
+            <div className={styles.title}>컨시크 컬러마크 워터 젤틴트</div>
             <div className={styles.priceInfo}>
               <span className={styles.percent}>93%</span>
               <span className={styles.retailPrice}>15,000</span>
@@ -102,13 +100,11 @@ const Home = () => {
           <li className={styles.product}>
             <img
               className={styles.image}
-              style={{width:width/2-15}}
+              style={{ width: width / 2 - 15 }}
               src="https://tonystreet.com/UPLOAD/UPLOAD_IMAGE/C020/202005/IMG1591zRt325089538_500.jpg"
             />
             <div className={styles.brand}>CONCHIC</div>
-            <div className={styles.title}>
-              컨시크 컬러마크 워터 젤틴트
-            </div>
+            <div className={styles.title}>컨시크 컬러마크 워터 젤틴트</div>
             <div className={styles.priceInfo}>
               <span className={styles.percent}>93%</span>
               <span className={styles.retailPrice}>15,000</span>
@@ -118,13 +114,11 @@ const Home = () => {
           <li className={styles.product}>
             <img
               className={styles.image}
-              style={{width:width/2-15}}
+              style={{ width: width / 2 - 15 }}
               src="https://tonystreet.com/UPLOAD/UPLOAD_IMAGE/C020/202005/IMG1591zRt325089538_500.jpg"
             />
             <div className={styles.brand}>CONCHIC</div>
-            <div className={styles.title}>
-              컨시크 컬러마크 워터 젤틴트
-            </div>
+            <div className={styles.title}>컨시크 컬러마크 워터 젤틴트</div>
             <div className={styles.priceInfo}>
               <span className={styles.percent}>93%</span>
               <span className={styles.retailPrice}>15,000</span>
@@ -134,36 +128,52 @@ const Home = () => {
         </ul>
       </section>
 
-      <section className={styles.imageBannerWrap} >
-        <img className={styles.bannerImg} src="https://d384glw2wph2ce.cloudfront.net/IMG1618Wi810051312.jpg"/>
-        <img className={styles.bannerImg} src="https://d384glw2wph2ce.cloudfront.net/IMG1618hS810055969.jpg"/>
+      <section className={styles.imageBannerWrap}>
+        <img
+          className={styles.bannerImg}
+          src="https://d384glw2wph2ce.cloudfront.net/IMG1618Wi810051312.jpg"
+        />
+        <img
+          className={styles.bannerImg}
+          src="https://d384glw2wph2ce.cloudfront.net/IMG1618hS810055969.jpg"
+        />
       </section>
 
       <section className={styles.bestContainer}>
         <div className={styles.titleWrap}>
           <span>이 시각, 인기 절정 베스트</span>
-          <i>></i>
+          <i>{">"}</i>
         </div>
         <ul className={styles.hotItemList}>
           <li className={styles.hotItemWrap}>
             <span className={styles.bestOrder}>1</span>
-            <img className={styles.image} src="https://tonystreet.com/UPLOAD/UPLOAD_IMAGE/C020/202005/IMG1591zRt325089538_500.jpg"></img>
+            <img
+              className={styles.image}
+              src="https://tonystreet.com/UPLOAD/UPLOAD_IMAGE/C020/202005/IMG1591zRt325089538_500.jpg"
+            ></img>
             <div className={styles.productInfo}>
               <span className={styles.brand}>CONCHIC</span>
               <span className={styles.title}>컨시크 컬러마크 워터 젤 틴트</span>
               <span className={styles.price}>15000원</span>
-              <div><span className={styles.tag}>무료배송</span></div>
+              <div>
+                <span className={styles.tag}>무료배송</span>
+              </div>
               <span className={styles.soldout}>일시품절</span>
             </div>
           </li>
           <li className={styles.hotItemWrap}>
             <span className={styles.bestOrder}>2</span>
-            <img className={styles.image} src="https://tonystreet.com/UPLOAD/UPLOAD_IMAGE/C020/202005/IMG1591zRt325089538_500.jpg"></img>
+            <img
+              className={styles.image}
+              src="https://tonystreet.com/UPLOAD/UPLOAD_IMAGE/C020/202005/IMG1591zRt325089538_500.jpg"
+            ></img>
             <div className={styles.productInfo}>
               <span className={styles.brand}>CONCHIC</span>
               <span className={styles.title}>컨시크 컬러마크 워터 젤 틴트</span>
               <span className={styles.price}>15000원</span>
-              <div><span className={styles.tag}>무료배송</span></div>
+              <div>
+                <span className={styles.tag}>무료배송</span>
+              </div>
               <span className={styles.soldout}>일시품절</span>
             </div>
           </li>
@@ -174,5 +184,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
